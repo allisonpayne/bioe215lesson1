@@ -1,42 +1,43 @@
-# How to set up a project #
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
-## 1. Create an RStudio project ##
+# How to set up a project
 
-Create a new project. The directory name is the name of the project. Make sure that "Create a git repository" is checked. 
+## 1. Create an RStudio project
 
-<i>Note: Stick to letters and numbers, and avoid special characters.</i>
+Create a new project. The directory name is the name of the project.
+Make sure that "Create a git repository" is checked.
 
-## 2. Create a git repository ##
+*Note: Stick to letters and numbers, and avoid special characters.*
 
-usethis::usegit()
-usethis::git_default_branch_rename()
+## 2. Create a git repository
+
+usethis::usegit() usethis::git_default_branch_rename()
 usethis::use_github()
 
-## 3. Set up folder structure ##
+## 3. Set up folder structure
 
-Good folders to include in the root folder: 
-  -data
-  -paper (for the manuscript)
-  -figs
-  -output (models, processed datasets, etc.)
-  -R (R scripts defining functions)
-  -reports (quarto documents)
-  -docs (rendered versions of the quarto docs)
-  -scratch (early prototypes, random stuff)
-  
-Scripts should live in your root folder unless things get really complicated. 
+Good folders to include in the root folder: -data -paper (for the
+manuscript) -figs -output (models, processed datasets, etc.) -R (R
+scripts defining functions) -reports (quarto documents) -docs (rendered
+versions of the quarto docs) -scratch (early prototypes, random stuff)
 
-If you don't want to share your data, call usethis::use_git_ignore("data/*"). 
+Scripts should live in your root folder unless things get really
+complicated.
 
-## 4. Activate GitHub pages ## 
+If you don't want to share your data, call
+usethis::use_git_ignore("data/\*").
 
-Create "index.md" in your docs folder. This is your readme! 
+## 4. Activate GitHub pages
 
-Go to your Github repo, click on settings, code & automation, and choose pages. 
-  source should say "deploy from a branch"
-  branch should say "main"
-  directory should say "/docs"
-  Save! 
-  
-Go back to git. Commit and push index.md and Github will render the site. 
+Create "index.md" in your docs folder. This is your readme!
 
+Go to your Github repo, click on settings, code & automation, and choose
+pages. source should say "deploy from a branch" branch should say "main"
+directory should say "/docs" Save!
+
+Go back to git. Commit and push index.md and Github will render the
+site.
