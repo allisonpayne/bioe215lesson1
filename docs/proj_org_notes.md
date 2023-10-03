@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # How to set up a project
 
 ## 1. Create an RStudio project
