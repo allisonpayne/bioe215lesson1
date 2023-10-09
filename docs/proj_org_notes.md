@@ -9,7 +9,8 @@ Make sure that "Create a git repository" is checked.
 
 ## 2. Create a git repository
 
-usethis::usegit() usethis::git_default_branch_rename()
+usethis::usegit() 
+usethis::git_default_branch_rename()
 usethis::use_github()
 
 ## 3. Set up folder structure
@@ -27,11 +28,10 @@ usethis::use_git_ignore("data/\*").
 
 ## 4. Activate GitHub pages
 
-Create "index.md" in your docs folder. This is your readme!
+Create "index.md" (text file) in your docs folder. This is your readme!
 
-Go to your Github repo, click on settings, code & automation, and choose
-pages. source should say "deploy from a branch" branch should say "main"
-directory should say "/docs" Save!
+Go to your Github repo, click on settings > Pages. Change branch to "main", directory to "docs". Source should say "deploy from a branch"
+Save!
 
 Go back to git. Commit and push index.md and Github will render the
 site.
